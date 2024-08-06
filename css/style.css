@@ -2,35 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Calibri;
 }
 
-.FundoHome{
-    background-image: url("../images/fundoHome.gif");
+.fundo-home {
+    background-image: url("../images/fundo.gif");
     background-size: cover;
-    height: calc(100vw/2); 
-    width: 100%;
-}
-.titleHome h1{
-    font-size: 38px;
-    font-family: "Poppins", sans-serif;
+    height: 45vw;
 }
 
-.titleHome h1 span{
-    color: #4682B4;
+.descricao-logo {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
 }
 
-.titleHome h1{
-    margin-top: 100px;
+.descricao {
+    width: 552px;
+    margin: auto;
+}
+
+.descricao h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
     text-align: left;
-    padding-left: 100px;
+    padding: 50px;
+}
+
+.descricao h1 span {
+    color: #468ec9;
+    font-weight: bold;
+}
+
+.logo-home {
+    margin: auto;
+}
+
+.logo-home img {
+    width: 30vw;
 }
 
 .logo-img {
-    width: 300px;
+    height: 10vw;
+    padding: 20px;
+    padding-left: 35px;
 }
 
-.navbar-brand {
-    font-size: 1.1rem;
+.transition-logo {
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+.transition-logo-sticky {
+    transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+}
+
+.transition-logo.visible {
+    transform: translateX(0);
+}
+
+.transition-logo-sticky.visible-sticky {
+    transform: translateX(0);
+}
+
+.navbar {
+    z-index: 2;
+    transition: 2s;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffffe0;
+    transition: 2s;
 }
 
 .nav-link {
@@ -99,6 +145,12 @@ main.cards section.card span {
 
 main.cards section.card {
     box-shadow: 5px 5px 5px #27b3de3e;
+}
+
+.quemsomos {
+    background: #f1feff;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 .cardquem {
@@ -210,25 +262,15 @@ main.cards section.card {
     transition-delay: 0.7s;
 }
 
-.nossos-projetos{
+.nossos-projetos {
     background: #8EE4F1;
     align-items: center;
-    justify-content: center
-}
-
-.carrossel-projetos{
-    display: flex;
     justify-content: center;
-    
-}
-
-.carrossel-projetos .item-carrossel img{
-    height: 800px;
-    width: 800px;
 }
 
 .parceiros {
-    height: 50vh;
+    height: 55vh;
+    background-color: #f1feff;
 }
 
 .parceiros h1 {
@@ -258,7 +300,7 @@ main.cards section.card {
     color: #000;
 }
 .left-login-img{
-    width: 35vw;
+    width: 45vw;
     object-fit: cover;
 }
 .right-login{
@@ -279,12 +321,11 @@ main.cards section.card {
     align-items: center;
     flex-direction: column;
     padding: 30px 50px;
-    background: #E0FFFF;
+    background: #e9ffff;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px #27b3de3e;
 }
 .card-login > h2{
-    color: #4682B4;
+    color: rgb(66, 158, 183);
     margin: 0;
 }
 .textfield{
@@ -347,7 +388,7 @@ main.cards section.card {
     display: flex;
     position: relative;
     width: 100%;
-    background: #5BC7E4;
+    background: #8ee4f1;
     min-height: 100px;
     padding: 20px 50px;
     justify-content: center;
@@ -385,7 +426,7 @@ main.cards section.card {
     display: inline-block;
     transition: 0.5s;
     text-decoration: none;
-    opacity: 0.75;
+    font-weight: 600;
 }
 
 .menu li a:hover{
@@ -398,6 +439,7 @@ footer p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.1em;
+    font-weight: 600;
 }
 
 .onda{
@@ -406,7 +448,7 @@ footer p{
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../images/ondaFooter.png);
+    background: url(../images/onda-footer.png);
     background-size: 1000px 100px;
 }
 
@@ -484,6 +526,6 @@ footer p{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #5BC7E4;
+    background-color: #4cc1e1;
     border-radius: 5px;
 }
