@@ -12,21 +12,20 @@
 }
 
 .descricao-logo {
-    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(2, 50vw);
+    margin-top: 5vh;
 }
 
 .descricao {
-    width: 552px;
+    width: 30vw;
     margin: auto;
 }
 
 .descricao h1 {
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     letter-spacing: 2px;
     text-align: left;
-    padding: 50px;
 }
 
 .descricao h1 span {
@@ -43,9 +42,9 @@
 }
 
 .logo-img {
-    height: 10vw;
-    padding: 20px;
-    padding-left: 35px;
+    height: 16vh;
+    padding: 1.5vw;
+    padding-left: 2.5vw;
 }
 
 .transition-logo {
@@ -79,9 +78,14 @@
     transition: 2s;
 }
 
+.nav-item {
+    padding: 1.2vw !important;
+}
+
 .nav-link {
     color: #000000a0;
-    font-size: 1.2rem;
+    font-size: 1.3vw;
+    padding: 1vw !important;
 }
 
 .nav-link:hover {
