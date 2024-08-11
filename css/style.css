@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Calibri;
+    font-family: Poppins !important;
 }
 
 .fundo-home {
     background-image: url("../images/fundo.gif");
     background-size: cover;
-    height: 45vw;
+    height: 600px;
 }
 
 .descricao-logo {
@@ -23,9 +25,10 @@
 }
 
 .descricao h1 {
-    font-size: 1.8vw;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     text-align: left;
+    line-height: 6vh;
 }
 
 .descricao h1 span {
@@ -38,13 +41,12 @@
 }
 
 .logo-home img {
-    width: 30vw;
+    width: 360px;
 }
 
 .logo-img {
-    height: 16vh;
+    height: 90px;
     padding: 1.5vw;
-    padding-left: 2.5vw;
 }
 
 .transition-logo {
@@ -84,8 +86,8 @@
 
 .nav-link {
     color: #000000a0;
-    font-size: 1.3vw;
-    padding: 1vw !important;
+    font-size: 1rem;
+    padding: 10px !important;
 }
 
 .nav-link:hover {
@@ -94,7 +96,7 @@
 }
 
 .title {
-    font-size: 3vw;
+    font-size: 2rem;
     text-align: center;
     margin-top: 25px;
 }
@@ -105,7 +107,6 @@ main.cards {
     justify-content: space-around;
     align-items: center;
     color: #434343;
-    font-family: "Poppins", sans-serif; 
     font-size: 20px;
 }
 
@@ -115,20 +116,13 @@ main.cards section.card {
     align-items: center;
     text-align: center;
     background: #E0FFFF;
-    padding: 1rem 1.5rem;
+    padding: 1vw 1vw;
     border-radius: 8px;
-    max-height: 500px;
-    margin-left: 32px;
     border: #8EE4F1;
-}
-
-main.cards section.card:first-child {
-    margin-left: 0;
 }
 
 main.cards section.card .icon {
     width: 250px;
-    height: 250px;
 }
 
 main.cards section.card img {
@@ -144,7 +138,6 @@ main.cards section.card span {
     font-weight: 300;
     max-width: 240px;
     font-size: 80%;
-    margin-bottom: 16px;
 }
 
 main.cards section.card {
@@ -152,7 +145,7 @@ main.cards section.card {
 }
 
 .quemsomos {
-    background: #f1feff;
+    background: #fff;
     padding: 10px;
     margin-top: 20px;
 }
@@ -169,7 +162,6 @@ main.cards section.card {
 
 .quemsomos-container {
     position: relative;
-    background-color: #E0FFFF;
     width: 220px;
     height: 220px;
     padding: 24px;
@@ -180,8 +172,7 @@ main.cards section.card {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    transition: width 0.4s, height 0.4s,
-        border-radius 0.4s;
+    transition: width 0.4s, height 0.4s, border-radius 0.4s;
     margin: 20px;
     padding: 15px;
     text-align: center;
@@ -209,7 +200,7 @@ main.cards section.card {
 }
 
 .full-name {
-    font-size: 1.4em;
+    font-size: 1.4rem;
     font-weight: bold;
     letter-spacing: 1px;
     margin-top: 40px;
@@ -218,7 +209,7 @@ main.cards section.card {
 
 .role,
 .description {
-    font-size: 1em;
+    font-size: 1rem;
     letter-spacing: 0.5px;
     line-height: 20px;
     text-align: center;
@@ -246,7 +237,7 @@ main.cards section.card {
     background: none;
     width: 20px;
     height: 40px;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     margin-bottom: 16px;
     cursor: pointer;
     transition: transform 0.4s;
@@ -274,7 +265,6 @@ main.cards section.card {
 
 .parceiros {
     height: 55vh;
-    background-color: #f1feff;
 }
 
 .parceiros h1 {
@@ -300,11 +290,11 @@ main.cards section.card {
     flex-direction: column;
 }
 .left-login > h1{
-    font-size: 3vw;
+    font-size: 3rem;
     color: #000;
 }
 .left-login-img{
-    width: 45vw;
+    width: 500px;
     object-fit: cover;
 }
 .right-login{
@@ -430,7 +420,6 @@ main.cards section.card {
     display: inline-block;
     transition: 0.5s;
     text-decoration: none;
-    font-weight: 600;
 }
 
 .menu li a:hover{
@@ -443,7 +432,6 @@ footer p{
     margin-top: 15px;
     margin-bottom: 10px;
     font-size: 1.1em;
-    font-weight: 600;
 }
 
 .onda{
@@ -532,4 +520,8 @@ footer p{
 ::-webkit-scrollbar-thumb{
     background-color: #4cc1e1;
     border-radius: 5px;
+}
+
+html, body {
+    overflow-x: hidden;
 }
