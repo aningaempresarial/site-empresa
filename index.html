@@ -258,9 +258,9 @@
     <section id="parceiros" class="parceiros">
         <h1 style="text-align: center; font-size: 2rem;">Nossos Parceiros</h1>
         <div class="parceiros-img">
-            <img src="images/godev3.svg" alt="Imagem 1" style="width: 300px;">
-            <img src="images/glow1.svg" alt="Imagem 2" style="width: 300px;">
-            <img src="images/waysystem.svg" alt="Imagem 3" style="width: 300px;">
+            <img src="images/goldev.png" alt="Imagem 1" class="parceiro-img">
+            <img src="images/glow.png" alt="Imagem 2" class="parceiro-img">
+            <img src="images/waysystem.png" alt="Imagem 3" class="parceiro-img">
         </div>
     </section>
     <!-- Formulário de contato -->
@@ -268,31 +268,28 @@
         <h1 class="title" style="margin-bottom: 100px;">Entre em contato conosco!</h1>
         <div class="main-login">
             <div class="left-login">
-                <img src="https://formspree.io/f/mkgnzedy" class="left-login-img">
+                <img src="images/contato.png" class="left-login-img">
             </div><!--div que fecha o left-login-->
             <div class="right-login">
                 <div class="card-login">
                     <h2>Contato</h2>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
-                    <form action="dados-contato.php" method="post">
-                            <input type="hidden" name="access_key" value="d3b1826c-d5c3-45af-a16e-e3e29483c59c">
+                    <form action="https://formspree.io/f/mkgnzedy" method="post">
                         <div class="textfield">
                             <label for="nome">Nome</label>
-                            <input id="nome" type="text" name="Nome" placeholder="Insira seu nome" />
+                            <input id="nome" type="text" name="txNome" placeholder="Insira seu nome" />
                             <div class="textfield">
                                 <label for="email">Email</label>
-                                <input id="email" type="text" name="Email" placeholder="Insira seu email" />
+                                <input id="email" type="text" name="txEmail" placeholder="Insira seu email" />
                             </div><!--div que fecha o textfield 1-->
                             <div class="textfield">
                                 <label for="assunto">Assunto</label>
-                                <input id="assunto" type="text" name="Assunto" placeholder="Insira o assunto" />
+                                <input id="assunto" type="text" name="txAssunto" placeholder="Insira o assunto" />
                             </div><!--div que fecha o textfield 1-->
                             <label for="mensagem">Mensagem</label>
-                            <textarea class="textarea" name="Mensagem" id="mensagem" cols="40" rows="3"></textarea>
+                            <textarea class="textarea" name="txMensagem" id="mensagem" cols="40" rows="3"></textarea>
                         </div><!--div que fecha o textfield 1-->
                         <div class="bnt"><button class="btn-login" onclick="alert()">Enviar</button></div>
                     </form>
-                </form>
                 </div><!--div que fecha o card-login-->
             </div><!--div que fecha o right-login-->
         </div><!--div que fecha o main login-->
